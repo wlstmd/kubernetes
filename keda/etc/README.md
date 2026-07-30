@@ -1,6 +1,6 @@
 # KEDA AWS SQS TriggerAuthentication 구성 예제
 
-`bastion.sh`는 비어 있고, 폴더에는 매니페스트(`secret.yaml`, `triggerauthentication.yaml`, `scaledobject.yaml`)만 있다. IRSA로 발급받은 `AWS_ROLE_ARN`을 `TriggerAuthentication`에 연결해서 SQS 큐 길이 기준으로 스케일링하는 예제다.
+IRSA로 발급받은 `AWS_ROLE_ARN`을 `TriggerAuthentication`에 연결해서 SQS 큐 길이 기준으로 스케일링하는 예제다.
 
 ## Secret (IAM Role ARN)
 

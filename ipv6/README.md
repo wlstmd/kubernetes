@@ -1,6 +1,6 @@
 # IPv6 EKS 클러스터
 
-IPv6 네트워킹으로 EKS 클러스터를 구성한다. `bastion.sh`는 비어 있고, 클러스터 정의는 `cluster.yaml`에 있다.
+IPv6 네트워킹으로 EKS 클러스터를 구성한다.
 
 ## cluster.yaml
 

@@ -2,8 +2,6 @@
 
 EKS 클러스터에서 PSP(PodSecurityPolicy) 잔존 여부를 확인하고 클러스터 로깅을 활성화한 뒤, PSS/PSA 정책 위반 시나리오를 순서대로 적용해보는 데모 실습 정리.
 
-## bastion.sh
-
 ## 환경 변수 설정
 ```sh
 export AWS_REGION=ap-northeast-2
