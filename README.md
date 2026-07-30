@@ -1,50 +1,39 @@
-## kubectl
+# wlstmd/kubernetes
 
-```sh
-# x86 x64
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-chmod +x ./kubectl
-sudo mv ./kubectl /usr/local/bin/kubectl
-kubectl version
+Useful script templates for Kubernetes related operations.
 
-# ARM64
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/arm64/kubectl"
-curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/arm64/kubectl.sha256"
-echo "$(cat kubectl.sha256) kubectl" | sha256sum --check
-sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-kubectl version --client
-```
+## this repo contains...
 
-## eksctl
+- Topic-organized EKS/K8s walkthroughs (each folder's README lists commands in order + explanations)
+- K8s resource manifests (ACK, Karpenter, CSI drivers, Gatekeeper, etc.)
+- Sample demo apps (Dockerfile + Go/Python)
+- Core tooling install script (`scripts/`: kubectl, eksctl, helm, k9s)
+- IAM policy JSON files for IRSA/ACK/CSI walkthroughs
 
-```sh
-# x86 x64
-curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
-sudo mv -v /tmp/eksctl /usr/local/bin
-eksctl version
+## Table of contents
 
-# ARM64
-curl -sLO "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_Linux_arm64.tar.gz"
-tar -xzf eksctl_Linux_arm64.tar.gz -C /tmp && rm eksctl_Linux_arm64.tar.gz
-sudo mv /tmp/eksctl /usr/local/bin
-eksctl version
-```
+Each folder has its own README.md laid out in the order the steps are meant to be run (setup/config commands + explanation).
 
-## helm
+| Category                  | Topics                                                                                      |
+| ------------------------- | ------------------------------------------------------------------------------------------- |
+| **ACK**                   | apigateway, ec2_vpc, rds, s3                                                                |
+| **Cluster / Autoscaling** | bottlerocket, ca, cpa, karpenter, ipv6, gatewayapi, ipvs                                    |
+| **CI/CD & GitOps**        | argocd, codeseries, flux                                                                    |
+| **Logging**               | cloudwatch+fluentbit, fargate, fluentd, efk, elk                                            |
+| **Monitoring**            | grafana, loki, prometheus(+grafana), k8s_dashboard, k9s, jaeger, opentelemetry, x_ray       |
+| **Security / Policy**     | apparmor, calico, networkpolicy, opa_gatekeeper, kyverno, pss_psa, ascp, sealed_secret, vso |
+| **Service Mesh**          | app_mesh, istio                                                                             |
+| **Storage**               | hostpath, shared, velero, volume_backup, statefulset_efs/local                              |
+| **Other**                 | batch, emr_on_eks, keda, mwaa, nth                                                          |
 
-```sh
-curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
-chmod 700 get_helm.sh
-./get_helm.sh
-helm version
-```
+- [batch](batch) — AWS Batch on EKS walkthrough
+- [emr_on_eks](emr_on_eks) — Setting up EMR on EKS and running a Spark job
+- [keda/basic](keda/basic) — Installing KEDA and configuring a cron-triggered ScaledObject
+- [keda/etc](keda/etc) — KEDA AWS SQS TriggerAuthentication example
+- [mwaa](mwaa) — Integrating MWAA (Managed Workflows for Apache Airflow)
+- [nth](nth) — Installing the AWS Node Termination Handler (NTH)
 
-## k9s
+## licence
 
-```sh
-sudo yum install -y wget
-wget wget https://github.com/derailed/k9s/releases/download/v0.32.5/k9s_Linux_amd64.tar.gz
-tar -xf k9s_Linux_amd64.tar.gz
-chmod +x k9s
-sudo mv k9s /usr/local/bin
-```
+&copy; 2026. Jinseung Yu. <jinseung0327@gmail.com>.\
+MIT Licensed. See [LICENSE](/LICENSE) file for more
