@@ -1,8 +1,8 @@
 # ACK EC2 컨트롤러 및 VPC/EC2 리소스 실습
 
-ACK(AWS Controllers for Kubernetes) EC2 컨트롤러를 설치하고, 쿠버네티스 매니페스트로 VPC/서브넷/인스턴스 등 EC2 리소스를 직접 생성·관리하는 실습입니다. `bastion.sh`로 컨트롤러를 설치하고 간단한 VPC/서브넷 데모를 진행한 뒤, `etc.sh`에서 IGW/NAT/라우팅/보안그룹/인스턴스까지 포함한 완전한 VPC 워크플로우를 실습합니다.
+ACK(AWS Controllers for Kubernetes) EC2 컨트롤러를 설치하고, 쿠버네티스 매니페스트로 VPC/서브넷/인스턴스 등 EC2 리소스를 직접 생성·관리하는 실습입니다. 먼저 컨트롤러를 설치하고 간단한 VPC/서브넷 데모를 진행한 뒤, IGW/NAT/라우팅/보안그룹/인스턴스까지 포함한 완전한 VPC 워크플로우로 이어집니다.
 
-## bastion.sh — ACK EC2 컨트롤러 설치 및 VPC/서브넷 데모
+## ACK EC2 컨트롤러 설치 및 VPC/서브넷 데모
 
 ### 변수 지정
 
@@ -152,7 +152,7 @@ aws ec2 describe-subnets --filters "Name=vpc-id,Values=$VPCID" --query 'Subnets[
 kubectl delete -f subnet.yaml && kubectl delete -f vpc.yaml
 ```
 
-## etc.sh — VPC/IGW/NAT/서브넷/인스턴스 전체 워크플로우
+## VPC/IGW/NAT/서브넷/인스턴스 전체 워크플로우
 
 ### VPC 및 관련 리소스 매니페스트 생성
 

@@ -1,6 +1,6 @@
 # Bottlerocket EKS 클러스터 - 서브넷 설정
 
-`skills-` 접두사로 태그된 VPC 서브넷 ID를 조회해서 `cluster.yaml`의 플레이스홀더 값을 실제 서브넷 ID로 치환하는 스크립트입니다.
+`skills-` 접두사로 태그된 VPC 서브넷 ID를 조회해서 `cluster.yaml`의 플레이스홀더 값을 실제 서브넷 ID로 치환한다.
 
 ## 서브넷 ID 조회 및 cluster.yaml 값 치환
 

@@ -1,6 +1,6 @@
 # Cluster Proportional Autoscaler 설치
 
-노드 수에 비례해서 `deployment/nginx-deployment`의 replica 수를 조정하는 Cluster Proportional Autoscaler를 Helm으로 설치하는 스크립트(`bastion.sh`)입니다.
+노드 수에 비례해서 `deployment/nginx-deployment`의 replica 수를 조정하는 Cluster Proportional Autoscaler를 Helm으로 설치한다.
 
 ## values.yaml 생성
 

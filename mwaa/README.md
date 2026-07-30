@@ -200,7 +200,7 @@ MWAA S3 버킷에 올릴 dags/requirements 디렉터리 구조.
 ```sh
 .
 ├─dags
-│  ├─example-eks.py
+│  ├─mwaa_pod.py
 │  └─kube_config.yaml
 └─requirements
     └─requirements.txt

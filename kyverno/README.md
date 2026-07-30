@@ -18,4 +18,4 @@ helm install kyverno kyverno/kyverno -n kyverno --create-namespace \
 kubectl -n kyverno get pods
 ```
 
-> `Policy/` 디렉터리에 개별 Kyverno ClusterPolicy 예시(add-network-policy, require-labels, restrict-image-registries 등)가 별도로 있다.
+> `policy/` 디렉터리에 개별 Kyverno ClusterPolicy 예시(add-network-policy, require-labels, restrict-image-registries 등)가 별도로 있다.

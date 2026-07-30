@@ -1,6 +1,6 @@
 # ELK(Elasticsearch + Logstash) 로깅 구성 및 테스트
 
-Logstash와 Filebeat로 EKS 상의 nginx 로그를 수집해서 Amazon Elasticsearch(OpenDistro) 도메인으로 보내고, 테스트 트래픽을 발생시켜 Kibana에서 확인하는 스크립트(`bastion.sh`)입니다.
+Logstash와 Filebeat로 EKS 상의 nginx 로그를 수집해서 Amazon Elasticsearch(OpenDistro) 도메인으로 보내고, 테스트 트래픽을 발생시켜 Kibana에서 확인한다.
 
 ## Environment variables
 

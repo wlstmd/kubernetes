@@ -21,10 +21,11 @@ Each folder has its own README.md laid out in the order the steps are meant to b
 | **CI/CD & GitOps**        | argocd, codeseries, flux                                                                    |
 | **Logging**               | cloudwatch+fluentbit, fargate, fluentd, efk, elk                                            |
 | **Monitoring**            | grafana, loki, prometheus(+grafana), k8s_dashboard, k9s, jaeger, opentelemetry, x_ray       |
-| **Security / Policy**     | apparmor, calico, networkpolicy, opa_gatekeeper, kyverno, pss_psa, ascp, sealed_secret, vso |
-| **Service Mesh**          | app_mesh, istio                                                                             |
+| **Security / Policy**     | apparmor, calico, networkpolicy, opa_gatekeeper, kyverno, pss_psa, ascp, sealed_secret, vso, kubearmor |
+| **Service Mesh**          | app_mesh, istio, spire_spiffe_integration                                                   |
 | **Storage**               | hostpath, shared, velero, volume_backup, statefulset_efs/local                              |
-| **Other**                 | batch, emr_on_eks, keda, mwaa, nth                                                          |
+| **Networking**            | topology_aware_routing, pod_eip_controller, kongapigw                                       |
+| **Other**                 | batch, emr_on_eks, keda, mwaa, nth, crossplane, kuberc, harbor, kafka_with_eks              |
 
 - [batch](batch) — AWS Batch on EKS walkthrough
 - [emr_on_eks](emr_on_eks) — Setting up EMR on EKS and running a Spark job
@@ -32,6 +33,10 @@ Each folder has its own README.md laid out in the order the steps are meant to b
 - [keda/etc](keda/etc) — KEDA AWS SQS TriggerAuthentication example
 - [mwaa](mwaa) — Integrating MWAA (Managed Workflows for Apache Airflow)
 - [nth](nth) — Installing the AWS Node Termination Handler (NTH)
+- [crossplane](crossplane) — Provisioning AWS resources via Crossplane + provider-aws
+- [kuberc](kuberc) — kubectl client-side preferences (`kuberc`): aliases + delete confirmation
+- [harbor](harbor) — Installing Harbor as a self-hosted container registry
+- [kafka_with_eks](kafka_with_eks) — Connecting EKS workloads to Amazon MSK (Kafka)
 
 ## licence
 

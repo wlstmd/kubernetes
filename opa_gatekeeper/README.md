@@ -1,6 +1,6 @@
 # OPA Gatekeeper 설치 및 구성
 
-OPA Gatekeeper를 EKS 클러스터에 설치하고, ConstraintTemplate/Constraint를 이용해 Container Image, Privileged Container, ECR Repository 사용을 제한하는 정책 실습 스크립트(`bastion.sh`) 정리.
+OPA Gatekeeper를 EKS 클러스터에 설치하고, ConstraintTemplate/Constraint를 이용해 Container Image, Privileged Container, ECR Repository 사용을 제한하는 정책 실습 정리.
 
 ## Ready
 

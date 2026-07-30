@@ -109,4 +109,4 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
 kubectl get deployment -n kube-system aws-load-balancer-controller
 ```
 
-(참고: `monitoring-ingress.yaml`을 별도로 `kubectl apply`하면 `/prometheus`는 Prometheus, `/`는 Grafana로 라우팅된다.)
+`monitoring-ingress.yaml`을 따로 적용하면 `/prometheus`는 Prometheus로, `/`는 Grafana로 라우팅된다.

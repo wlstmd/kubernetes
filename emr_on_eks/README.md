@@ -1,6 +1,6 @@
 # EMR on EKS 구성 및 Spark Job 실행
 
-EKS 클러스터를 EMR 가상 클러스터로 등록하고, Job Execution Role/IRSA 신뢰 정책을 구성한 뒤 PySpark 잡을 EMR on EKS로 실행하는 스크립트(`bastion.sh`)입니다.
+EKS 클러스터를 EMR 가상 클러스터로 등록하고, Job Execution Role/IRSA 신뢰 정책을 구성한 뒤 PySpark 잡을 EMR on EKS로 실행한다.
 
 ## 환경 변수 설정
 

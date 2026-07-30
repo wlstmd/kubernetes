@@ -1,6 +1,6 @@
 # FluxCD GitOps 구성 및 실습
 
-Flux CLI 설치와 GitHub 부트스트랩부터 시작해서 Git 소스/Kustomization, HelmRelease(값 오버라이드 포함), Weave GitOps 대시보드까지 실습하는 스크립트(`bastion.sh`)입니다.
+Flux CLI 설치와 GitHub 부트스트랩부터 시작해서 Git 소스/Kustomization, HelmRelease(값 오버라이드 포함), Weave GitOps 대시보드까지 다루는 실습 정리.
 
 ## Flux CLI 설치 및 GitHub 부트스트랩
 

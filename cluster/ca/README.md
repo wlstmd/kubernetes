@@ -1,6 +1,6 @@
 # Cluster Autoscaler 설치 및 구성
 
-EKS 클러스터에 Cluster Autoscaler를 위한 IAM 정책/서비스 어카운트를 만들고 배포한 뒤, safe-to-evict 설정을 패치하고 로그로 동작을 확인하는 스크립트(`ca.sh`)입니다.
+EKS 클러스터에 Cluster Autoscaler를 위한 IAM 정책/서비스 어카운트를 만들고 배포한 뒤, safe-to-evict 설정을 패치하고 로그로 동작을 확인한다.
 
 ## IAM 정책 생성
 

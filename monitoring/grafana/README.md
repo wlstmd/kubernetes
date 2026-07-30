@@ -16,4 +16,4 @@ helm install grafana grafana/grafana \
     --set service.type=ClusterIP
 ```
 
-(참고: `prometheus-source.yaml`을 데이터소스 값 파일로 사용해 Grafana가 Prometheus를 기본 데이터소스로 바라보도록 설정한다. `ingress-grafana.yaml`을 별도로 `kubectl apply`하면 기존 `skills-alb`에 `/grafana` 경로로 노출된다.)
+`prometheus-source.yaml`을 데이터소스 값 파일로 사용해서 Grafana가 Prometheus를 기본 데이터소스로 바라보게 설정한다. `ingress-grafana.yaml`을 따로 적용하면 기존 `skills-alb`에 `/grafana` 경로로 노출된다.

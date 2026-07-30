@@ -1,6 +1,6 @@
 # ACK API Gateway 설치 및 구성
 
-ACK(AWS Controllers for Kubernetes) APIGatewayv2 컨트롤러를 설치하고, AWS Load Balancer Controller 및 VPC Link를 통해 내부 NLB를 API Gateway와 연동하는 실습 스크립트입니다.
+ACK(AWS Controllers for Kubernetes) APIGatewayv2 컨트롤러를 설치하고, AWS Load Balancer Controller 및 VPC Link를 통해 내부 NLB를 API Gateway와 연동하는 실습.
 
 ## 변수 지정
 

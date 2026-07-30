@@ -1,6 +1,6 @@
 # EFK(Fluent Bit + Elasticsearch/Kibana) 로깅 구성
 
-Fluent Bit로 EKS 로그를 수집해서 Amazon Elasticsearch(OpenDistro) 도메인으로 보내고, Kibana로 조회할 수 있도록 구성하는 스크립트(`bastion.sh`)입니다.
+Fluent Bit로 EKS 로그를 수집해서 Amazon Elasticsearch(OpenDistro) 도메인으로 보내고, Kibana로 조회할 수 있도록 구성한다.
 
 ## 환경 변수 설정
 

@@ -95,4 +95,4 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
 kubectl get deployment -n kube-system aws-load-balancer-controller
 ```
 
-(참고: `ingress-prometheus.yaml`을 별도로 `kubectl apply`하면 `/prometheus` 경로로 노출된다.)
+`ingress-prometheus.yaml`을 따로 적용하면 `/prometheus` 경로로 노출된다.

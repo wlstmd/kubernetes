@@ -1,8 +1,8 @@
 # GatewayAPI (VPC Lattice) 클러스터 구성
 
-EKS 클러스터를 생성하고 AWS Gateway API Controller(VPC Lattice)를 설치한 뒤, Gateway/HTTPRoute로 서비스 간 트래픽을 연결하고 테스트하는 실습입니다. `bastion.sh`(클러스터 생성 + 컨트롤러 설치 + 서비스 배포/테스트)를 먼저 실행하고, 이후 `init.sh`(CloudFormation 기반 인프라 배포 + 서비스 확인)를 실행하는 흐름입니다.
+EKS 클러스터를 생성하고 AWS Gateway API Controller(VPC Lattice)를 설치한 뒤, Gateway/HTTPRoute로 서비스 간 트래픽을 연결하고 테스트한다. 클러스터 생성과 컨트롤러 설치/서비스 배포·테스트를 먼저 하고, CloudFormation 기반 인프라 배포와 서비스 확인을 그다음에 진행하는 흐름이다.
 
-## bastion.sh — 클러스터 생성 및 Gateway API 컨트롤러 설치
+## 클러스터 생성 및 Gateway API 컨트롤러 설치
 
 ### 서브넷 조회, cluster.yaml 값 치환 및 클러스터 생성
 
@@ -182,7 +182,7 @@ kubectl exec deploy/inventory-ver1 -- curl $k8s_rates_svc_dns/review
 kubectl exec deploy/parking -- curl $k8s_inventory_svc_dns
 ```
 
-## init.sh — CloudFormation 배포 및 서비스 확인
+## CloudFormation 배포 및 서비스 확인
 
 ### CloudFormation 스택 배포
 
